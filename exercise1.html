@@ -13,9 +13,11 @@
       back.addEventListener("click", () => {
         if (index == 0) {
           document.body.style.backgroundColor = "lightblue";
+          back.textContent = "Return to normal"
           index = 1;
         } else {
           document.body.style.backgroundColor = "white";
+          back.textContent = "Change background"
           index = 0;
         }
       });
