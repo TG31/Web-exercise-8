@@ -1,1 +1,24 @@
-        <!-- Write your code here -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button">Change Background</button>
+    <script>
+      let back = document.getElementById("button");
+      let index = 0;
+      back.addEventListener("click", () => {
+        if (index == 0) {
+          document.body.style.backgroundColor = "lightblue";
+          index = 1;
+        } else {
+          document.body.style.backgroundColor = "white";
+          index = 0;
+        }
+      });
+    </script>
+  </body>
+</html>
