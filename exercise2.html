@@ -1,1 +1,35 @@
-   <!-- Write your code here -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #box {
+        background-color: lightcoral;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+    <div id="box"></div>
+    <script>
+      let res = document.getElementById("box");
+      let curwidth = 400;
+      let curheight = 400;
+      let width = 200;
+      let height = 200;
+      res.addEventListener("click", () => {
+        res.style.width = curwidth + "px";
+        res.style.height = curheight + "px";
+        res.style.transition = "0.2s";
+      });
+      res.addEventListener("dblclick", () => {
+        res.style.width = width + "px";
+        res.style.height = height + "px";
+        res.style.transition = "0.2s";
+      });
+    </script>
+  </body>
+</html>
