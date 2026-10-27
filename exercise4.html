@@ -1,1 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="display">0</h1>
+    <button id="sub">-</button>
+    <button id="add">+</button>
+    <button id="reset">Reset</button>
+    <script>
+      let minus = document.getElementById("sub");
+      let ad = document.getElementById("add");
+      let rest = document.getElementById("reset");
+      let disp = document.getElementById("display");
+      minus.addEventListener("click", () => {
+        disp.textContent = parseInt(disp.textContent) - 1;
+      });
 
+      ad.addEventListener("click", () => {
+        disp.textContent = parseInt(disp.textContent) + 1;
+      });
+
+      rest.addEventListener("click", () => {
+        disp.textContent = 0;
+      });
+    </script>
+  </body>
+</html>
